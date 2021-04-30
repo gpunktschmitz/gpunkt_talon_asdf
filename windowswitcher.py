@@ -1,7 +1,7 @@
 # source: https://raw.githubusercontent.com/timo/talon_scripts/master/code/windowswitcher.py
 from talon import Context, Module, app, clip, cron, imgui, canvas, actions, ui
 from talon.skia import Rect
-from ...knausj_talon.code.keys import default_alphabet, letters_string
+from user.knausj_talon.code.keys import default_alphabet, letters_string
 
 from subprocess import run
 from math import log, ceil
