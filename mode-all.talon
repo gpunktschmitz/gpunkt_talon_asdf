@@ -22,15 +22,15 @@ mode: all
 # window management (linux mint mate desktop)
 ^win[dow] max[imize]$:
     key(alt-space)
-    sleep(.2)
+    sleep(200ms)
     key('x')
 ^win[dow] min[imize]$:
     key(alt-space)
-    sleep(.2)
+    sleep(200ms)
     key('n')
 ^win[dow] [always] [on] top$:
     key(alt-space)
-    sleep(.2)
+    sleep(200ms)
     key('t')
 # alternative to open/close mouse grid
 ^mouse grid$:
