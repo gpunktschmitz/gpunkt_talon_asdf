@@ -1,7 +1,7 @@
 mode: all
 -
 # as i had trouble (before conformer) to say "talon" i changed it to a random name .. "peter"
-^peter [a]sleep$: speech.disable()
+^peter [goto] [a]sleep$: speech.disable()
 ^peter [a]wake [up]$: speech.enable()
 # i set my "start/application menu" to "ctrl+super"
 ^peter menu$: key(ctrl-super)
