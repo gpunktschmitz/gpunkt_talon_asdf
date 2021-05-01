@@ -131,13 +131,9 @@ class Actions:
         window.focus()
         close_gui_and_drawing()
 
-    def close_window_switcher():
-        close_gui_and_drawing()
-
 @ctx.capture(rule='{self.window_selection_words}')
 def window_selection_words(m):
     taken = window_spelling.index(m.window_selection_words)
     return shown_windows[taken]
 
 ctx.lists['self.window_selection_words'] = []
-
