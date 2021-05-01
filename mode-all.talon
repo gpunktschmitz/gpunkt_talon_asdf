@@ -19,8 +19,6 @@ mode: all
 ^junk <number_small>$: key("backspace:{number_small}")
 # open context menu
 ^context$: key(alt-space)
-# switch application
-^[app] switch$: key(alt-tab)
 # window management (linux mint mate desktop)
 ^win[dow] max[imize]$:
     key(alt-space)
