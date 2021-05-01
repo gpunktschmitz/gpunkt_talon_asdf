@@ -7,6 +7,8 @@ mode: all
 ^peter menu$: key(ctrl-super)
 # to shutdown/hibernate/suspend i press "ctrl+alt+delete"
 ^peter power$: key(ctrl-alt-delete)
+# toggle notify
+^peter notify$: user.notify_toggle()
 # closing any app/window
 ^(win[dow]|app|application) close$: key(alt-f4)
 # cancel out
