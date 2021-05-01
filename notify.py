@@ -17,4 +17,4 @@ class Actions:
             speech_system.unregister('post:phrase', on_phrase)
         else:
             speech_system.register('post:phrase', on_phrase)
-        do_notify = not do_notifyp40
+        do_notify = not do_notify
