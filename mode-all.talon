@@ -19,6 +19,8 @@ mode: all
 ^junk <number_small>$: key("backspace:{number_small}")
 # open context menu
 ^context$: key(alt-space)
+# switch application
+^[app] switch$: key(alt-tab)
 # window management (linux mint mate desktop)
 ^win[dow] max[imize]$:
     key(alt-space)
@@ -37,6 +39,8 @@ mode: all
     user.grid_select_screen(1)
     user.grid_activate()
 ^mouse grid off$: user.grid_close()
+^mouse control$: user.mouse_toggle_control_mouse()
+^mouse zoom$: user.mouse_toggle_zoom_mouse()
 # alternatives for more reliable recognition
 ^ditto$: key('"')
 ^wiggle$: key(~)
