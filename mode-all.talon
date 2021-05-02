@@ -39,8 +39,9 @@ mode: all
     user.grid_select_screen(1)
     user.grid_activate()
 ^mouse grid off$: user.grid_close()
-^mouse control$: user.mouse_toggle_control_mouse()
-^mouse zoom$: user.mouse_toggle_zoom_mouse()
+^mouse control [toggle|off]$: user.mouse_toggle_control_mouse()
+^mouse zoom [toggle|off]$: user.mouse_toggle_zoom_mouse()
+^mouse calibrate$: user.mouse_calibrate()
 # alternatives for more reliable recognition
 ^ditto$: key('"')
 ^wiggle$: key(~)
