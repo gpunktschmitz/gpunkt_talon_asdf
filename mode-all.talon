@@ -44,8 +44,8 @@ mode: all
 ^mouse calibrate$: user.mouse_calibrate()
 # alternatives for more reliable recognition
 ^ditto$: key('"')
-^wiggle$: key(~)
-^money boy$: key($)
+^wiggle$: key('~')
+^money boy$: key('$')
 ^put$: key(space)
 ^(delhi|deli)$: key(delete)
 ^tab restore$: app.tab_reopen()
