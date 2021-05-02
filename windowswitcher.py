@@ -129,8 +129,13 @@ class Actions:
     def switch_to_window(window: ui.Window):
         """Switch to the window at the given index"""
         window.focus()
-        close_gui_and_drawing()
+        gui.hide()
 
+
+    def close_window_switcher():
+        """close window switcher"""
+        gui.hide()
+        
 @ctx.capture(rule='{self.window_selection_words}')
 def window_selection_words(m):
     taken = window_spelling.index(m.window_selection_words)
