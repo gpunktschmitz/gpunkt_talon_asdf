@@ -5,8 +5,10 @@ mode: all
 ^peter [a]wake [up]$: speech.enable()
 # i set my "start/application menu" to "ctrl+super"
 ^peter menu$: key(ctrl-super)
-# to shutdown/hibernate/suspend i press "ctrl+alt+delete"
+# custom command to show shutdown/hibernate/suspend-dialog
 ^peter power$: key(ctrl-alt-delete)
+# custom command to restart talon
+^peter restart talon$: key(ctrl-alt-h)
 # toggle notify
 ^peter notify$: user.notify_toggle()
 # closing any app/window
