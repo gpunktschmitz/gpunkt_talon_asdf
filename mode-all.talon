@@ -15,6 +15,8 @@ mode: all
 ^(win[dow]|app|application) close$: key(alt-f4)
 # cancel out
 ^cancel$: key(escape)
+# junk to delete to the right
+^junk right$: key(delete)
 # junk to delete quickly
 ^junk$: key(backspace)
 # TOOD: make this work with ordinals for now it takes only numbers
