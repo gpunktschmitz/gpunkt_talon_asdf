@@ -42,6 +42,10 @@ mode: all
 ^mouse control [toggle|off]$: user.mouse_toggle_control_mouse()
 ^mouse zoom [toggle|off]$: user.mouse_toggle_zoom_mouse()
 ^mouse calibrate$: user.mouse_calibrate()
+# globally defined shortcut for playing and pausing music
+^music (play|pause)$: key(ctrl-alt-p)
+# globally defined shortcut for skipping track
+^music next$: key(ctrl-alt-n)
 # alternatives for more reliable recognition
 ^ditto$: key('"')
 ^wiggle$: key('~')
