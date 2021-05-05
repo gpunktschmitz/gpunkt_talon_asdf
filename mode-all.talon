@@ -38,6 +38,17 @@ mode: all
     key(alt-space)
     sleep(200ms)
     key('t')
+^win[dow] snap left$: key(super-left)
+^win[dow] snap right$: key(super-right)
+^win[dow] max height$: key(super-up)
+^win[dow] max width$: key(super-down)
+^win[dow] restore$:
+    key(alt-space)
+    sleep(200ms)
+    key('x')
+    key(alt-space)
+    sleep(200ms)
+    key('x')
 # alternative to open/close mouse grid
 ^mouse grid$:
     user.grid_select_screen(1)
