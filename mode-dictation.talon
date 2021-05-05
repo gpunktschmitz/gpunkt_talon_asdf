@@ -1,4 +1,3 @@
-mode: dicta
+mode: dictation
 -
 ^dot$: key('.')
-
