@@ -3,6 +3,8 @@ mode: all
 # as i had trouble (before conformer) to say "talon" i changed it to a random name .. "peter"
 ^peter [goto] [a]sleep$: speech.disable()
 ^peter [a]wake [up]$: speech.enable()
+^peter (geschlafen|geh schlafen)$: speech.disable()
+^peter (wach auf)$: speech.enable()
 # i set my "start/application menu" to "ctrl+super"
 ^peter menu$: key(ctrl-super)
 # custom command to show shutdown/hibernate/suspend-dialog
