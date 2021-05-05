@@ -17,6 +17,8 @@ mode: all
 ^cancel$: key(escape)
 # junk to delete to the right
 ^junk right$: key(delete)
+# TOOD: make this work with ordinals for now it takes only numbers
+^junk right<number_small>$: key("delete:{number_small}")
 # junk to delete quickly
 ^junk$: key(backspace)
 # TOOD: make this work with ordinals for now it takes only numbers
