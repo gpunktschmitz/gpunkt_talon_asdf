@@ -49,3 +49,5 @@ mode: all
 ^paste$: edit.paste()
 ^undo$: edit.undo()
 ^redo$: edit.redo()
+# mark all
+^mara$: key(ctrl-a)
