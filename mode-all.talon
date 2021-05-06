@@ -17,14 +17,12 @@ mode: all
 ^(win[dow]|app|application) close$: key(alt-f4)
 # cancel out
 ^cancel$: key(escape)
-# junk to delete to the right
-^junk right$: key(delete)
-# TOOD: make this work with ordinals for now it takes only numbers
-^junk right<number_small>$: key("delete:{number_small}")
-# junk to delete quickly
-^junk$: key(backspace)
-# TOOD: make this work with ordinals for now it takes only numbers
-^junk <number_small>$: key("backspace:{number_small}")
+# delete to the right
+^scratch right$: key(delete)
+^scratch right <user.ordinals>$: key("delete:{ordinals}")
+# delete
+^scratch$: key(backspace)
+^scratch <user.ordinals>$: key("backspace:{ordinals}")
 # open context menu
 ^context$: key(alt-space)
 # switch application
