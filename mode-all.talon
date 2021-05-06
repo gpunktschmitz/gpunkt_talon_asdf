@@ -5,10 +5,6 @@ mode: all
 ^peter [a]wake [up]$: speech.enable()
 ^peter (geschlafen|geh schlafen)$: speech.disable()
 ^peter (wach auf)$: speech.enable()
-# i set my "start/application menu" to "ctrl+super"
-^peter menu$: key(ctrl-super)
-# custom command to show shutdown/hibernate/suspend-dialog
-^peter power$: key(ctrl-alt-delete)
 # custom command to restart talon
 ^peter restart talon$: key(ctrl-alt-h)
 # toggle notify
@@ -27,30 +23,6 @@ mode: all
 ^context$: key(alt-space)
 # switch application
 ^[app] switch$: key(alt-tab)
-# window management (linux mint mate desktop)
-^win[dow] max[imize]$:
-    key(alt-space)
-    sleep(200ms)
-    key('x')
-^win[dow] min[imize]$:
-    key(alt-space)
-    sleep(200ms)
-    key('n')
-^win[dow] [always] [on] top$:
-    key(alt-space)
-    sleep(200ms)
-    key('t')
-^win[dow] snap left$: key(super-left)
-^win[dow] snap right$: key(super-right)
-^win[dow] max height$: key(super-up)
-^win[dow] max width$: key(super-down)
-^win[dow] restore$:
-    key(alt-space)
-    sleep(200ms)
-    key('x')
-    key(alt-space)
-    sleep(200ms)
-    key('x')
 # alternative to open/close mouse grid
 ^mouse grid$:
     user.grid_select_screen(1)
@@ -69,11 +41,8 @@ mode: all
 ^money boy$: key('$')
 ^put$: key(space)
 ^(delhi|deli)$: key(delete)
-^tab restore$: app.tab_reopen()
 # ascii art
 ^shrug$: "¯\_(ツ)_/¯"
-# host specific shortcuts
-^mouse speed$: key(ctrl-alt-m)
 # skip "that" for those commands
 ^copy$: edit.copy()
 ^cut$: edit.cut()
