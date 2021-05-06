@@ -1,9 +1,13 @@
 mode: dictation
 -
 ^dot$: key('.')
-^undo$: key(ctrl-z)
-# TOOD: make this work with ordinals for now it takes only numbers
-^undo<number_small>$: key("ctrl-z:{number_small}")
+^undo [that]$: key(ctrl-z)
+^undo [that] <user.ordinals>$: key("ctrl-z:{ordinals}")
 ^select word left$: key(ctrl-shift-left)
-# TOOD: make this work with ordinals for now it takes only numbers
-^select word left<number_small>$: key("ctrl-shift-left:{number_small}")
+^select word left <user.ordinals>$: key("ctrl-shift-left:{ordinals}")
+^select word right$: key(ctrl-shift-right)
+^select word right <user.ordinals>$: key("ctrl-shift-right:{ordinals}")
+^go word left$: key(ctrl-left)
+^go word left <user.ordinals>$: key("ctrl-left:{ordinals}")
+^go word right$: key(ctrl-right)
+^go word right<user.ordinals>$: key("ctrl-right:{ordinals}")
