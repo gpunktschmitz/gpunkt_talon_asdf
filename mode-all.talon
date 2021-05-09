@@ -51,3 +51,6 @@ mode: all
 ^redo$: edit.redo()
 # mark all
 ^mara$: key(ctrl-a)
+# spaced symbols
+^sequels$: " = "
+^spipe$: " | "
