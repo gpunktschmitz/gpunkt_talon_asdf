@@ -14,11 +14,13 @@ mode: all
 # cancel out
 ^cancel$: key(escape)
 # delete to the right
-^scratch right$: key(delete)
+^(junk|scratch) right$: key(delete)
 ^scratch right <user.ordinals>$: key("delete:{ordinals}")
+^junk right <number_small>$: key("delete:{number_small}")
 # delete
-^scratch$: key(backspace)
+^(junk|scratch)$: key(backspace)
 ^scratch <user.ordinals>$: key("backspace:{ordinals}")
+^junk <number_small>$: key("backspace:{number_small}")
 # open context menu
 ^context$: key(alt-space)
 # switch application
