@@ -1,6 +1,6 @@
 -
 settings():
     speech.record_all = 0
-    speech.timeout = 0.300
+    speech.timeout = 300ms
     # for windows when running next to dragon - force talon to use wav2letter 
     speech.engine = "wav2letter"
