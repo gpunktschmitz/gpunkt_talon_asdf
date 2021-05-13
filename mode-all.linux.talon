@@ -23,7 +23,7 @@ mode: all
     sleep(200ms)
     key(alt-s)
 # window management (linux mint mate desktop)
-^win[dow] max[imize]$:
+^(allwin | win[dow] max[imize])$:
     key(alt-space)
     sleep(200ms)
     key('x')
