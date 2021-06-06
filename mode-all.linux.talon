@@ -48,3 +48,8 @@ mode: all
     key('x')
 # custom shortcut to execute 'xinput --set-prop "Lenovo Optical Mouse" "libinput Accel Speed" 0' which sets the mouse speed for the external mouse (and keep the default for the trackpoint)
 ^mouse speed$: key(ctrl-alt-m)
+awkward:"""awk 'OFS="\t"{{print $0}}'"""
+# as the right sidebar in slack has no shortcut to close click to close
+^slack close right sidebar$: user.slack_close_right_sidebar()
+# print window rect info to console
+^debug window rect$: user.print_mouse_win()
