@@ -18,7 +18,7 @@ mode: all
     sleep(200ms)
     key(alt-r)
 # shutdown computer
-^peter power restart$:
+^peter power off$:
     key(ctrl-alt-delete)
     sleep(200ms)
     key(alt-s)
