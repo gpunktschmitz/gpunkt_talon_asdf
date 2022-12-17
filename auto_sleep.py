@@ -9,7 +9,7 @@ speech_system.register('post:phrase', on_phrase)
 def on_ready():
     global job
     if actions.speech.enabled():
-       job = cron.after('2m', actions.speech.disable)
+        job = cron.after('2m', actions.speech.disable)
 app.register("ready", on_ready)
 # https://github.com/nriley/knausj_talon/blob/nriley/misc/screen.py
 ui.register('screen_sleep', lambda e: actions.speech.disable())
