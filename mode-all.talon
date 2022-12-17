@@ -38,6 +38,8 @@ mode: all
 ^music (play|pause)$: key(ctrl-alt-p)
 # globally defined shortcut for skipping track
 ^music next$: key(ctrl-alt-n)
+# globally defined shortcut for custom script to mute music for a minute
+^music mute ad$: key(ctrl-alt-a)
 # alternatives for more reliable recognition
 ^ditto$: key('"')
 ^wiggle$: key('~')
