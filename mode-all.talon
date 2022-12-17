@@ -23,6 +23,7 @@ mode: all
 ^junk <number_small>$: key("backspace:{number_small}")
 # open context menu
 ^context$: key(alt-space)
+^file context$: key(shift-f10)
 # switch application
 ^[app] switch$: key(alt-tab)
 # alternative to open/close mouse grid
