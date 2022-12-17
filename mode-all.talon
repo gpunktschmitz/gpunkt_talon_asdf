@@ -1,10 +1,18 @@
 mode: all
 -
 # as i had trouble (before conformer) to say "talon" i changed it to a random name .. "peter"
-^peter [goto] [a]sleep$: speech.disable()
-^peter [a]wake [up]$: speech.enable()
-^peter (geschlafen|geh schlafen)$: speech.disable()
-^peter (wach auf)$: speech.enable()
+^peter [goto] [a]sleep$:
+    speech.disable()
+    user.mouse_toggle_control_mouse()
+^peter [a]wake [up]$: 
+    speech.enable()
+    user.mouse_toggle_control_mouse()
+^peter (geschlafen|geh schlafen)$: 
+    speech.disable()
+    user.mouse_toggle_control_mouse()
+^peter (wach auf)$: 
+    speech.enable()
+    user.mouse_toggle_control_mouse()
 # custom command to restart talon
 ^peter restart talon$: key(ctrl-alt-h)
 # toggle notify
