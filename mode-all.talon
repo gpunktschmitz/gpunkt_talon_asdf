@@ -41,6 +41,7 @@ mode: all
 # globally defined shortcut for custom script to mute music for a minute
 ^music mute ad$: key(ctrl-alt-a)
 # alternatives for more reliable recognition
+^tick$: key("'")
 ^ditto$: key('"')
 ^wiggle$: key('~')
 ^money boy$: key('$')
