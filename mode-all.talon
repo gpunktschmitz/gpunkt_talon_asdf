@@ -69,3 +69,4 @@ mode: all
 # spaced symbols
 ^sequels$: " = "
 ^spipe$: " | "
+(stale | still): user.pause_mouse_control()
