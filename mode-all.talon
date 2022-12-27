@@ -42,6 +42,7 @@ mode: all
 ^mouse control [toggle|off]$: user.mouse_toggle_control_mouse()
 ^mouse zoom [toggle|off]$: user.mouse_toggle_zoom_mouse()
 ^mouse calibrate$: user.mouse_calibrate()
+^mouse print position$: user.print_mouse_position()
 # globally defined shortcut for playing and pausing music
 ^music (play|pause)$: key(ctrl-alt-p)
 # globally defined shortcut for skipping track
