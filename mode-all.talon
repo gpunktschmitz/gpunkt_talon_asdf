@@ -70,3 +70,4 @@ mode: all
 ^sequels$: " = "
 ^spipe$: " | "
 (stale | still): user.pause_mouse_control()
+^termi$: key(ctrl-alt-t)
