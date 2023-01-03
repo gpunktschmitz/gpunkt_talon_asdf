@@ -7,7 +7,7 @@ def on_phrase(j):
     app.notify(phrase)
 speech_system.register('post:phrase', on_phrase)
 # above enables notifications. Below supports toggling them.
-do_notify = True
+do_notify = False
 @mod.action_class
 class Actions:
     def notify_toggle():
