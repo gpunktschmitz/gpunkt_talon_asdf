@@ -7,21 +7,6 @@ mode: all
 ^peter menu$: key(ctrl-super)
 # show shutdown/hibernate/suspend-dialog
 ^peter power$: key(ctrl-alt-delete)
-# send computer to sleep
-^peter power sleep$:
-    key(ctrl-alt-delete)
-    sleep(200ms)
-    key(alt-u)
-# restart computer
-^peter power restart$:
-    key(ctrl-alt-delete)
-    sleep(200ms)
-    key(alt-r)
-# shutdown computer
-^peter power off$:
-    key(ctrl-alt-delete)
-    sleep(200ms)
-    key(alt-s)
 # window management (linux mint mate desktop)
 ^(allwin | win[dow] max[imize])$:
     key(alt-space)
@@ -53,3 +38,4 @@ awkward:"""awk 'OFS="\t"{{print $0}}'"""
 ^slack close right sidebar$: user.slack_close_right_sidebar()
 # print window rect info to console
 ^debug window rect$: user.print_mouse_win()
+
